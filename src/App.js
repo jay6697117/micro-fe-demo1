@@ -15,6 +15,7 @@ function App() {
 
       {/* 切换导航将微应用渲染到container容器中 */}
       <div id='container'></div>
+      <hr />
       <div className='logo'>
         <img width='100' src={logo} alt='logo' />
       </div>
