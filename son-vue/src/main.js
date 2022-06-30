@@ -7,7 +7,6 @@ Vue.use(VueRouter);
 
 Vue.config.productionTip = false;
 
-/*  eslint-disable */
 let routerClone;
 let instClone;
 function render(props = {}) {
@@ -43,7 +42,7 @@ export async function bootstrap() {
 }
 export async function mount(props) {
   // 参数props包含了主应用中的注册信息
-  console.log('vue2 app mount', props);
+  console.log('vue2 app mount:', props);
   render(props);
 }
 export async function unmount() {
