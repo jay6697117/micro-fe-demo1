@@ -15,8 +15,7 @@ function render(props = {}) {
 
   routerClone = new VueRouter({
     mode: 'history',
-    // base: '/vue',
-    base: '/',
+    base: '/vue', //微应用建议使用 history 模式的路由，需要设置路由 base，值和它的 activeRule 是一样的
     routes
   });
 

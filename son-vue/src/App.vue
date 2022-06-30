@@ -1,13 +1,9 @@
 <template>
   <div class="App">
     <div class="nav">
-      <router-link to="/vue">Home</router-link>
+      <router-link to="/">Home</router-link>
       &nbsp;&nbsp;&nbsp;
-      <router-link to="/vue/about">About</router-link>
-      &nbsp;&nbsp;&nbsp;
-      <router-link to="/react">React子应用</router-link>
-      &nbsp;&nbsp;&nbsp;
-      <router-link to="/">主页</router-link>
+      <router-link to="/about">About</router-link>
     </div>
     <router-view />
   </div>
