@@ -3,10 +3,11 @@ import ReactDOM from 'react-dom/client';
 import './assets/index.css';
 import App from './App';
 
+let root = null;
 function render(props = {}) {
   console.log('render props:', props);
   const { container } = props;
-  const root = ReactDOM.createRoot(container ? container.querySelector('#root') : document.getElementById('root'));
+  root = ReactDOM.createRoot(container ? container.querySelector('#root') : document.getElementById('root'));
   root.render(<App />);
 }
 
@@ -19,12 +20,11 @@ export async function bootstrap() {
 }
 export async function mount(props) {
   console.log('mount');
+  console.log('mount props:', props);
   render(props);
 }
 export async function unmount(props) {
   console.log('unmount');
-  let { container } = props;
-  const root = ReactDOM.createRoot(container ? container.querySelector('#root') : document.getElementById('root'));
+  console.log('unmount props:', props);
   root.unmount();
-  // ReactDOM.unmountComponentAtNode(container ? container.querySelector('#root') : document.getElementById('root'));
 }
