@@ -5,8 +5,9 @@ import App from './App';
 
 function render(props = {}) {
   console.log('render props:', props);
-  let { container } = props;
-  ReactDOM.render(<App />, container ? container.querySelector('#root') : document.getElementById('root'));
+  const { container } = props;
+  const root = ReactDOM.createRoot(container ? container.querySelector('#root') : document.getElementById('root'));
+  root.render(<App />);
 }
 
 if (!window.__POWERED_BY_QIANKUN__) {
@@ -23,5 +24,7 @@ export async function mount(props) {
 export async function unmount(props) {
   console.log('unmount');
   let { container } = props;
-  ReactDOM.unmountComponentAtNode(container ? container.querySelector('#root') : document.getElementById('root'));
+  const root = ReactDOM.createRoot(container ? container.querySelector('#root') : document.getElementById('root'));
+  root.unmount();
+  // ReactDOM.unmountComponentAtNode(container ? container.querySelector('#root') : document.getElementById('root'));
 }
