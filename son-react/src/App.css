@@ -14,12 +14,13 @@
 }
 
 .App-header {
+  padding: 50px 0;
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
 }
@@ -35,4 +36,9 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.Browser-router {
+  padding: 2px 10px;
+  background-color: #eee;
 }

@@ -16,7 +16,8 @@ function render(props = {}) {
 
   routerClone = new VueRouter({
     mode: 'history',
-    base: '/vue',
+    // base: '/vue',
+    base: '/',
     routes
   });
 
