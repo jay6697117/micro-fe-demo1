@@ -1,4 +1,4 @@
-# son-vue
+# sub-vue
 
 ## Project setup
 ```

@@ -10,7 +10,7 @@ module.exports = {
     // 需要获取我打包的内容
     output: {
       libraryTarget: 'umd', // 打包格式
-      library: 'son-vue' // 打包成umd格式会挂载到window上，名为m-vue
+      library: 'sub-vue' // 打包成umd格式会挂载到window上，名为m-vue
     }
   }
 };
