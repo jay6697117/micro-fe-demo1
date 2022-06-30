@@ -2,11 +2,11 @@
   <div id="app">
     <div id="nav">
       <router-link to="/vue">Home</router-link>
-      |
+      &nbsp;&nbsp;&nbsp;
       <router-link to="/vue/about">About</router-link>
-      |
+      &nbsp;&nbsp;&nbsp;
       <router-link to="/react">React子应用</router-link>
-            |
+      &nbsp;&nbsp;&nbsp;
       <router-link to="/">主页</router-link>
     </div>
     <router-view />

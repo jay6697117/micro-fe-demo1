@@ -1,6 +1,6 @@
 import logo from './assets/logo.svg';
 import './assets/App.css';
-import { BrowserRouter, HashRouter, Link } from 'react-router-dom';
+import { BrowserRouter, Link } from 'react-router-dom';
 
 function App() {
   return (

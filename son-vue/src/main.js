@@ -12,7 +12,6 @@ let instClone;
 function render(props = {}) {
   console.log('render props', props);
   let { container } = props;
-  console.log('process.env.BASE_URL', process.env.BASE_URL);
 
   routerClone = new VueRouter({
     mode: 'history',
