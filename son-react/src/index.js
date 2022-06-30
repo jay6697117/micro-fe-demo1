@@ -18,11 +18,13 @@ if (!window.__POWERED_BY_QIANKUN__) {
 export async function bootstrap() {
   console.log('bootstrap');
 }
+
 export async function mount(props) {
   console.log('mount');
   console.log('mount props:', props);
   render(props);
 }
+
 export async function unmount(props) {
   console.log('unmount');
   console.log('unmount props:', props);

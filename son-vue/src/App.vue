@@ -1,6 +1,6 @@
 <template>
-  <div id="app">
-    <div id="nav">
+  <div class="App">
+    <div class="nav">
       <router-link to="/vue">Home</router-link>
       &nbsp;&nbsp;&nbsp;
       <router-link to="/vue/about">About</router-link>
@@ -14,15 +14,16 @@
 </template>
 
 <style lang="scss">
-#app {
+.App {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  background-color: lightblue;
 }
 
-#nav {
+.nav {
   padding: 30px;
 
   a {

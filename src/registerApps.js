@@ -44,4 +44,8 @@ registerMicroApps(
 );
 
 // 调用start用于启动子应用
-start();
+start({
+  sandbox: {
+    experimentalStyleIsolation: true
+  }
+});
